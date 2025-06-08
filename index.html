@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Gravity</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="quiz-main">
+    <header class="quiz-header">
+      <h1>Quiz Gravity</h1>
+    </header>
+    <section id="gameContainer" class="quiz-container">
+      <article id="questionContainer" class="question-section">
+        <h2 id="question" aria-live="polite">Question will appear here</h2>
+        <div id="answers" class="answers-grid" role="group" aria-label="Answer choices">
+          <button class="answerButton" id="OptionA" tabindex="0">Answer 1</button>
+          <button class="answerButton" id="OptionB" tabindex="0">Answer 2</button>
+          <button class="answerButton" id="OptionC" tabindex="0">Answer 3</button>
+          <button class="answerButton" id="OptionD" tabindex="0">Answer 4</button>
+        </div>
+      </article>
+      <aside id="gameInfo" class="game-info">
+        <span id="timer" class="timer" aria-live="polite">⏳ 30s</span>
+        <span id="score" class="score">$ 0</span>
+      </aside>
+      <section id="subjectSelection" class="subject-selection">
+        <h3>Select Subjects</h3>
+        <div class="subjects-list">
+          <label><input type="checkbox" class="subjectCheckbox" value="Math" > Math</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="English" > English</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Chemistry" > Chemistry</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Physics" > Physics</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Biology" > Biology</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Government" > Government</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Economics" > Economics</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Geography" > Geography</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Literature" > Literature</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Agricultural Science" > Agricultural Science</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Civic Education" > Civic Education</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Commerce" > Commerce</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Accounting" > Accounting</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="Further Mathematics" > Further Mathematics</label>
+          <label><input type="checkbox" class="subjectCheckbox" value="CRS" > CRS</label>
+        </div>
+        <div id="leaderboard" style="display:none;">
+  <h3>Leaderboard</h3>
+  <ol id="leaderboardList"></ol>
+</div>
+        <button id="startQuizButton" class="start-btn">Start Quiz</button>
+      </section>
+    </section>
+    <footer class="quiz-footer">
+      <small>&copy; 2025 Quiz Gravity. All rights reserved.</small>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
